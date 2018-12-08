@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jessica Perez</title>
+
+    <!-- panditas -->
+    <link href="bootstrap-4.0.0.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+       <a class="navbar-brand" href="index.html">Inicio</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+               <a class="nav-link" href="datos personales.html">Datos personales<span class="src=sr-only"></span></a>
+            </li>
+             <li class="nav-item">
+                <a class="nav-link" href="tareas.html">Tareas<span class="src=sr-only"></span></a>
+             </li>
+             <li class="nav-item">
+                <a class="nav-link" href="diploma.html"><em>Diploma</em><span class="src=sr-only"></span></a>
+             </li>
+             <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <em>Temas del curso</em>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                   <a class="dropdown-item" href="sistemas de numeracion.html">Sistemas de numeración</a>
+                   <a class="dropdown-item" href="codigos binarios.html">Codigos binarios</a>
+                   <a class="dropdown-item" href="algebra booleana.html">Algebra Booleana</a>
+                   <a class="dropdown-item" href="circuitos msi y lsi.html">Circuitos MSI Y LSI</a>
+                   <a class="dropdown-item" href="decodificadores.html">Decodificadores</a>
+                   <a class="dropdown-item" href="multiplexores.html">Multiplexores</a>
+                   <a class="dropdown-item" href="contadores.html">Contadores</a>
+                   <a class="dropdown-item" href="sumadores.html">Sumadores</a>
+                   <a class="dropdown-item" href="alu.html">ALU</a>
+
+                </div>
+              </ul>
+       </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid text-center">
+       <h1 class="display-4">Sistemas de númeración</h1>
+        <hr class="my-4">
+       <h3>Introducción</h3>
+       <p>En la informática se usaron muchos sistemas de numeración como lo fue el sistema binario, decimal, octal y hexadecimal ya que fueron muy útil para la realización de varios<br>
+      programas pero la tecnología ha avanzado tanto que ya estos sistemas están si se puede decir obsoleto.<br>
+      Para la realización de estos programas se tenia que realizar algunas conversiones , de lo cual se les explicara algunos de ello.</p>
+      <p>Un sistema de numeración es un conjunto de símbolos y reglas que permi­ten representar datos numéricos. Los sistemas de numeración actuales son sistemas posicionales, que se<br>
+      caracterizan porque un símbolo tiene distinto valor según la posición que ocupa en la cifra.
+       a continuacion se presentan los sistemas de numeracion que existen:</p>
+       <hr class="my-4">
+       <h3>Sistema de Numeración Posicional</h3>
+       <hr class="my-4">
+       <p> Un sistema de numeración es posicional cuando el valor de cada simbolo depende del lugar que ocupa con respecto a los demás, como se muestra en la siguiente imagen:</p>
+         <img src="sistema posicional.png" geight="200" alt="sistema posicional"/>
+       </br>
+          <hr class="my-4">
+       <h3>El sistema decimal</h3>
+       <hr class="my-4">
+       <p>El sistema de numeración que utiliza­mos habitualmente es el decimal, que se compone de diez símbolos o dígi­tos (0, 1, 2, 3, 4, 5, 6, 7, 8 y 9) a los que otorga un valor dependiendo de la posición que ocupen en la cifra: unidades, decenas, centenas, millares, etc.
+El valor de cada dígito está asociado al de una potencia de base 10, número que coincide con la cantidad de símbolos o dígitos del sistema decimal, y un exponente igual a la posición que ocupa el dígito menos uno, contando desde la de­recha.
+En el sistema decimal el número 528, por ejemplo, significa:</P>
+<p>5 centenas + 2 decenas + 8 unidades, es decir:</P>
+<p>5*10^2 + 2*10^1 + 8*10^0 o, lo que es lo mismo:</P>
+<p>500 + 20 + 8 = 528</P>
+  <p>En el caso de números con decimales, la situación es análoga aunque, en este caso, algunos exponentes de las potencias serán negativos, concreta­mente el de los dígitos colocados a la derecha del separador decimal. Por ejemplo, el número 8245,97 se calcularía como:</P>
+<p>8 millares + 2 centenas + 4 decenas + 5 unidades + 9 décimos + 7 céntimos</p>
+<p>8*10^3 + 2*10^2 + 4*10^1 + 5*10^0 + 9*10^-1 + 7*10^-2, es decir:</p>
+<p>8000 + 200 + 40 + 5 + 0,9 + 0,07 = 8245,97</P>
+  <hr>
+<h3>Sistema de numeración binario.</h3>
+<p>El sistema de numeración binario utiliza sólo dos dígitos, el cero (0) y el uno (1).<br>
+En una cifra binaria, cada dígito tiene distinto valor dependiendo de la posición que ocupe. El valor de cada posición es el de una potencia de base 2, elevada a un exponente igual a la posición del dígito menos uno. Se puede observar que, tal y como ocurría con el sistema decimal, la base de la potencia coincide con la cantidad de dígitos utilizados (2) para representar los números.<br>
+De acuerdo con estas reglas, el número binario 1011 tiene un valor que se calcula así:</P>
+<br>
+<p>1*2^3 + 0*2^2 + 1*2^1 + 1*2^0 , es decir:</P>
+<p>8 + 0 + 2 + 1 = 11</p>
+<p>y para expresar que ambas cifras describen la misma cantidad lo escribimos así:<br>
+10112 = 1110</p>
+
+<h3> Conversión entre números decimales y binarios</h3>
+<p>Convertir un número decimal al sistema binario es muy sencillo: basta con realizar divisiones sucesivas por 2 y escribir los restos obtenidos en cada división en orden inverso al que han sido obtenidos.<br>
+Por ejemplo, para convertir al sistema binario el número 7710 haremos una serie de divisiones que arrojarán los restos siguientes:</p>
+<p>77 : 2 = 38 Resto: 1<br>
+38 : 2 = 19 Resto: 0<br>
+19 : 2 = 9 Resto: 1<br>
+9 : 2 = 4 Resto: 1<br>
+4 : 2 = 2 Resto: 0<br>
+2 : 2 = 1 Resto: 0<br>
+1 : 2 = 0 Resto: 1<br>
+y, tomando los restos en orden inverso obtenemos la cifra binaria:<br>
+7710 = 10011012</p>
+<br>
+<h3>Conversión de binario a decimal</h3>
+<p>El proceso para convertir un número del sistema binario al decimal es aún más sencillo; basta con desarrollar el número, teniendo en cuenta el valor de cada dígito en su posición, que es el de una potencia de 2, cuyo exponente es 0 en el bit situado más a la derecha, y se incrementa en una unidad según vamos avanzando posiciones hacia la izquierda.<br>
+Por ejemplo, para convertir el número binario 10100112 a decimal, lo desarrollamos teniendo en cuenta el valor de cada bit:<br>
+1*2^6 + 0*2^5 + 1*2^4 + 0*2^3 + 0*2^2 + 1*2^1 + 1*2^0 = 83<br>
+10100112 = 83^10</p>
+<br>
+<h3>Sistema de numeración octal</h3>
+<p>El inconveniente de la codificación binaria es que la representación de algunos números resulta muy larga. Por este motivo se utilizan otros sistemas de numeración que resulten más cómodos de escribir: el sistema octal y el sistema hexadecimal. Afortunadamente, resulta muy fácil convertir un número binario a octal o a hexadecimal.<br>
+En el sistema de numeración octal, los números se representan mediante ocho dígitos diferentes: 0, 1, 2, 3, 4, 5, 6 y 7. Cada dígito tiene, naturalmente, un valor distinto dependiendo del lu­gar que ocupen. El valor de cada una de las posiciones viene determinado por las potencias de base 8.<br>
+Por ejemplo, el número octal 2738 tiene un valor que se calcula así:<br>
+2*8^3 + 7*8^2 + 3*8^1 = 2*512 + 7*64 + 3*8 = 1496^10<br>
+273^8 = 1496^10</p>
+<h3>Conversión de un número decimal a octal</h3>
+<p>La conversión de un número decimal a octal se hace con la misma técnica que ya hemos utilizado en la conversión a binario, mediante divisiones sucesivas por 8 y colocando los restos obtenidos en orden inverso. Por ejemplo, para escribir en octal el número decimal 12210 tendremos que hacer las siguientes divisiones:<br>
+<p>122 : 8 = 15     Resto: 2<br>
+15 : 8 = 1          Resto: 7<br>
+1 : 8 = 0           Resto: 1<br>
+Tomando los restos obtenidos en orden inverso tendremos la cifra octal:<br>
+12210 = 1728</p>
+<br>
+<h3>Sistema de numeración hexadecimal</h3>
+En el sistema hexadecimal los números se representan con dieciséis símbolos: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E y F. Se utilizan los caracteres A, B, C, D, E y F representando las cantidades decima­les 10, 11, 12, 13, 14 y 15 respectivamente, porque no hay dígitos mayores que 9 en el sistema decimal. El valor de cada uno de estos símbolos depende, como es lógico, de su posición, que se calcula mediante potencias de base 16.<br>
+Calculemos, a modo de ejemplo, el valor del número hexadecimal 1A3F16:<br>
+1A3F16 = 1*163 + A*162 + 3*161 + F*160<br>
+1*4096 + 10*256 + 3*16 + 15*1 = 6719<br>
+1A3F16 = 671910</p>
+<br>
+       <hr class="my-4">
+       <h3>Video sobre el tema</h3>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/4kenXkQBIEw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+       <br>
+       <hr>
+       <div class="row">
+          <div class="text-center col-lg-6 offset-lg-3">
+             <h4>Footer </h4>
+             <p>Jessica Perez &copy; 2018 &middot;UV todos los derechos reservados; <a href="#" >Mi pagina web</a></p>
+          </div>
+       </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="jquery-3.2.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="popper.min.js"></script>
+    <script src="bootstrap-4.0.0.js"></script>
+  </body>
+</html>

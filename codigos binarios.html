@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jessica Perez</title>
+
+    <!-- panditas -->
+    <link href="bootstrap-4.0.0.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+       <a class="navbar-brand" href="index.html">Inicio</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+               <a class="nav-link" href="datos personales.html">Datos personales<span class="src=sr-only"></span></a>
+            </li>
+             <li class="nav-item">
+                <a class="nav-link" href="tareas.html">Tareas<span class="src=sr-only"></span></a>
+             </li>
+             <li class="nav-item">
+                <a class="nav-link" href="diploma.html"><em>Diploma</em><span class="src=sr-only"></span></a>
+             </li>
+             <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <em>Temas del curso</em>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                   <a class="dropdown-item" href="sistemas de numeracion.html">Sistemas de numeración</a>
+                   <a class="dropdown-item" href="codigos binarios.html">Codigos binarios</a>
+                   <a class="dropdown-item" href="algebra booleana.html">Algebra Booleana</a>
+                   <a class="dropdown-item" href="circuitos msi y lsi.html">Circuitos MSI Y LSI</a>
+                   <a class="dropdown-item" href="decodificadores.html">Decodificadores</a>
+                   <a class="dropdown-item" href="multiplexores.html">Multiplexores</a>
+                   <a class="dropdown-item" href="contadores.html">Contadores</a>
+                   <a class="dropdown-item" href="sumadores.html">Sumadores</a>
+                   <a class="dropdown-item" href="alu.html">ALU</a>
+
+                </div>
+              </ul>
+       </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid text-center">
+       <h1 class="display-4">Códigos Binarios</h1>
+              <hr class="my-4">
+          <h3>¿Que es un código binario?</h3>
+              <p>El código binario es un método de representación de números a la base 2, en el que cada lugar de un número corresponde a una potencia<br>
+ de 2. El código binario usa sólo los  digitos 1 y 0 (conocidos como dígitos binarios, o "bits") y combina esos dígitos para producir  diferentes números binarios casi todas las computadoras<br>
+ usan el código binario porque es fácil  de implementar usando la electrónica digital y el álgebra booleana, en las que las variables sólo tienen los valores 0 y 1.</p>
+             <img src="binario.jpg" width="500"  geight="400" alt="numeros"/>
+           <hr>
+           <h2><em>Características del código binario</em></h2>
+             <hr class="my-4" <font color="colors">
+             <h4>Ponderación</h4>
+             <p>La mayoria de los sistemas de numeración actuales son ponderados, es decir, cada posición de una secuencia de dígitos tiene asociado un peso. El
+               sistema binario es, de hecho, un sistema de numeración posicional ponderado. Sin embargo algunos códigos binarios, como el código Gray no son
+               ponderados es decir, no tienen un peso asociado a cada posición.<br>
+               Otros como el mismo código binario natural o el BCD natural si lo son.</p>
+                <hr>
+            <h3>Distancia</h3>
+            <p> La distancia es una característica sólo aplicable a las combinaciones binarias. La distancia entre dos combinaciones binarias es el número de bits
+              que cambian de una a otra. Por ejemplo: si se tienen las combinaciones de cuatro bits 0010 y 0111 correspondientes al 2 y 7 en binario natural, se
+              dirá que la distancia entre ellas es igual a dos ya que de una a otra cambian dos bits.<br>
+              Además, con el concepto de distancia se puede definir la distancia mínima de un código. Esta no es más que la distancia menor que haya entre dos de
+              las combinaciones de ese código.</p>
+              <p>La distancia es una característica que, además, sólo se aplica a las combinaciones binarias. En resumen, la distancia entre dos combinaciones es el
+                número de bits que cambian de una a otra.</p>
+             <hr>
+            <h3>Autocomplementariedad</h3>
+            <p>Se dice que un código binario es autocomplementario cuando el complemento a 9 del equivalente decimal de cualquier combinación del código puede hallarse
+              invirtiendo los valores de cada uno de los bits (operación lógica unaria de negación) y el resultado sigue siendo una combinación válida en ese código. Esta
+              característica se observa en algunos códigos BCD, como el código Aiken o el código BCD exceso 3. Los códigos binarios autocomplementarios facilitan las
+              operaciones aritméticas.</p>
+              <p>En un código binario de ancho fijo, cada letra, dígito, u otros símbolos, estan representados por una cadena de bits de la misma longitud, como un
+                número binario que, por lo general, aparece en las tablas en notación octal, decimal o hexadecimal.</p>
+              <hr>
+             <h3>Notación</h3>
+          <p>El código binario trabaja esencialmente de la misma forma que el código decimal, o de base 10, pero en lugar de que los valores sean entre 0 y 9, cada columna
+            puede contener un valor de 0 a 1. El número uno es representado como 1 tanto en el código decimal como en el binario. El número dos está representadocomo 2 en el código
+              decimal, pero como 10 en el binario. Esto indica 0 en la columna de 2. Se aplica el mismo principio para los números binarios grandes, el código binario 1001 representa un
+              número binario de 4 bits con 1 y 1 en la columna de 2, 0 en la columna de 4 y 1 en la columna de 8, o equivalente de 8+0+0+1=9 en el código decimal.</p>
+             <hr>
+              <h3>Computadoras</h3>
+              <p>Las computadoras usan pequeños dispositivos electrónicos, conocidos como transisitores, para encender y apagar el flujo eléctronico de su circuito. Como tales
+                las computadoras sólo pueden recnocer encendido y apagado, lo que pueden traducir como 0 y 1. Sin embargo, las computadoras pueden traducir todo tipo de datos, incluyendo
+                texto, números, sonidos y videos, al código binario, por lo que pueden usar efectivamente los digitos 1 y 0 para todo lo que hacen.</p>
+             <hr>
+            <h3>Números binarios con signo</h3>
+            <p>Los números binarios pueden tener signos, eso es positivo o negativo, pero el signo del número debe representarse con los dígitos 0 y 1. Un número binario con signo consiste en
+              dos partes, el signo y la magnitud. El bit, conocido como el bit más importante, denota el signo, mientras que el resto de los bits denota la magnitud del número. Un número
+              binario de 8 bits sin signo, puede representar valores entre 0 y 255 (2^8=256), mientras que un número binario de 8 bit con signo puede representar valores entre -2^7 y 2^7-1, o -128 y 127.</p>
+           <hr>
+          <h3>Punto binario</h3>
+            <p>Los números binarios también pueden contener un punto binario, para que puedan representar fracciones y números de integrales.<br>
+              El punto binario puede ser fijo o flotante; en el caso de un número con punto flotante, un registro de computadora (un área de memoria de velocidad en la unidad de procesamiento central) guarda
+              el número sin el punto binario, mientras que un segundo registro guarda el número que indica la posición del punto binario</p>
+
+
+    </div>
+          <hr class="my-4" <font color="colors">
+
+            <div class="jumbotron jumbotron-fluid text-center">
+               <h2><em>Videos</em></h2>
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/6pWYxVWUYeY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/f9b0wwhTmeU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+       <br>
+       <hr>
+       <div class="row">
+          <div class="text-center col-lg-6 offset-lg-3">
+             <h4>Footer </h4>
+             <p>Jessica Perez &copy; 2018 &middot;UV todos los derechos reservados; <a href="#" >Mi pagina web</a></p>
+          </div>
+       </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="jquery-3.2.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="popper.min.js"></script>
+    <script src="bootstrap-4.0.0.js"></script>
+  </body>
+</html>

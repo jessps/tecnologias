@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jessica Perez</title>
+
+    <!-- panditas -->
+    <link href="bootstrap-4.0.0.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+       <a class="navbar-brand" href="index.html">Inicio</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+               <a class="nav-link" href="datos personales.html">Datos personales<span class="src=sr-only"></span></a>
+            </li>
+             <li class="nav-item">
+                <a class="nav-link" href="tareas.html">Tareas<span class="src=sr-only"></span></a>
+             </li>
+             <li class="nav-item">
+                <a class="nav-link" href="diploma.html"><em>Diploma</em><span class="src=sr-only"></span></a>
+             </li>
+             <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <em>Temas del curso</em>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                   <a class="dropdown-item" href="sistemas de numeracion.html">Sistemas de numeración</a>
+                   <a class="dropdown-item" href="codigos binarios.html">Codigos binarios</a>
+                   <a class="dropdown-item" href="algebra booleana.html">Algebra Booleana</a>
+                   <a class="dropdown-item" href="circuitos msi y lsi.html">Circuitos MSI Y LSI</a>
+                   <a class="dropdown-item" href="decodificadores.html">Decodificadores</a>
+                   <a class="dropdown-item" href="multiplexores.html">Multiplexores</a>
+                   <a class="dropdown-item" href="contadores.html">Contadores</a>
+                   <a class="dropdown-item" href="sumadores.html">Sumadores</a>
+                   <a class="dropdown-item" href="alu.html">ALU</a>
+
+                </div>
+              </ul>
+       </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid text-center">
+       <h1 class="display-4">Sumadores</h1>
+         <hr class="my-4" <font color="blue">
+       <p>EL sumador es un circuito digital que realiza la adición de números. En muchas computadoras y otros tipos de procesadores se utilizan sumadores en las unidades aritméticas lógicas. También se utilizan en otras
+          partes del procesador, donde se utilizan para calcular direcciones, índices de tablas, operadores de incremento y decremento y operaciones similares. </p>
+          <br>
+           <p>Aunque los sumadores se pueden construir para muchas representaciones numéricas, tales como decimal codificado en binario o exceso-3, los sumadores más comunes funcionan en números binarios. En los casos en que se utiliza el
+              complemento a dos o el complemento a uno para representar números negativos, es trivial modificar un sumador para convertirlo en un sumador-restador. Otras representaciones de números con signo requieren más lógica alrededor del sumador básico.</p>
+    <br>
+     <h2><em>Sumadores binarios</em></h2>
+       <hr class="my-4" <font color="purple">
+     <br>
+     <h3>Semisumador</h3>
+     <br>
+     <p>El semisumador suma dos dígitos binarios simples A y B, denominados sumandos, y sus salidas son Suma (S) y Acarreo (C). La señal de acarreo representa un desbordamiento en el siguiente dígito en una adición de varios dígitos. El diseño más simple de semisumador, representado a la derecha, incorpora una puerta XOR para S y una puerta AND para C. Dos semisumadores pueden ser combinados para hacer un sumador completo, añadiendo una puerta OR para combinar sus salidas de acarreo.1​ La tabla de verdad para el semisumador se detalla seguidamente:</p>
+      <img src="entrada y salida.png" width="300"  geight="150" alt="entradas y salidas"/>
+      <h4><em> funcionamiento de un semisumador</em></h4>
+        <img src="funcionamiento del semisumador.gif" width="250"  geight="150" alt="funcionamiento de un semisumador"/>
+  <hr class="my-4" <font color="colors">
+     <h3>Sumador completo</h3>
+     <br>
+     <p>Un sumador completo suma números binarios junto con las cantidades de acarreo. Un sumador completo de un bit añade tres bits, a menudo escritos como A, B y Cin siendo A y B son los sumandos y Cin es el acarreo que proviene de la anterior etapa menos significativa. 1​ El sumador completo suele ser un componente de una cascada de sumadores, que suman 8, 16, 32, etc. números binarios de bits. El circuito produce una salida de dos bits, al igual que el semisumador, denominadas acarreo de salida (Cout) y suma S.</p>
+     <p>Un sumador completo se puede implementar de muchas maneras diferentes, tales como con un circuito a transistores o compuesto de otras puertas. Un ejemplo de implementación es expresado con las siguientes ecuaciones:</p>
+      <img src="ecuaciones.png" width="300"  geight="150" alt="numeros"/>
+      <h4><em>Funcionamiento de un sumador completo</em></h4>
+      <img src="funcionamiento de un sumador completo.gif" width="250"  geight="150" alt="funcionamiento de un sumador completo"/>
+     <br>
+     <p>En esta implementación, la puerta OR final antes del acarreo de salida puede ser reemplazada por una puerta XOR sin alterar la lógica resultante. El uso de sólo dos tipos de compuertas es conveniente si el circuito se está implementando usando circuitos integrados que contienen sólo un tipo de puerta.</P>
+<p>Se puede construir un sumador completo a partir de dos semisumadores conectando las entradas A y B a la entrada de un primer semisumador, conectando su salida de suma a una de las entradas del segundo semisumador, conectando el acarreo de entrada Cin a la otra entrada y conectando los acarreos de salida de los semisumadores a una puerta OR. La ruta crítica de un sumador completo recorre ambas puertas XOR y hasta llegar a la salida S. Suponiendo que una puerta XOR tenga un retardo D, el retardo total por el camino crítico de un sumador completo es igual a:</p>
+ <img src="sumador completo.png" width="300"  geight="150" alt="ecuacion"/>
+  <p>En cambio, la ruta crítica para la señal de acarreo recorre una puerta XOR, una AND y otra OR. Si cada una de estas puertas digitales presenta un retardo D, el retardo total es:</p>
+ <img src="retrato total.png" width="300"  geight="150" alt="ecuacion"/>
+ <br>
+<p> La tabla de verdad del sumador completo es la siguiente:</p>
+<br>
+ <img src="tabla de verdad.png" width="250"  geight="150" alt="tabla"/>
+ <br>
+   <hr class="my-4" <font color="blue">
+     <h3>Sumadores que soportan varios bits</h3>
+     <hr class="my-4" <font color="blue">
+       <h3>Sumadores con propagación de acarreo</h3>
+      <br>
+      <p>Un sumador con propagación de acarreo, también denominado sumador de acarreo serie, es aquel constituido por varios sumadores completos en los cuales el acarreo de salida se conecta a la entrada de acarreo del sumador siguiente. Sin embargo, puede observarse que el primero de los sumadores puede ser reemplazado por un semisumador suponiendo que el acarreo de entrada Cin es cero.</p>
+      <br>
+      <img src="sumador de 4 bits.png" width="350"  geight="150" alt="ecuacion"/>
+      <br>
+<p>El esquema de un sumador de acarreo serie es sencillo, lo que implica un corto tiempo de diseño; sin embargo, el sumador es relativamente lento ya que cada etapa debe esperar que se calcule un acarreo de entrada de la etapa previa. El retardo de propagación puede ser fácilmente calculado por un inspección del esquema circuital. Cada sumador completo requiere tres niveles de lógica. En un sumador de acarreo serie de 32 bits, existen 32 sumadores completos de modo que el retardo en la ruta crítica (en el peor de los casos) es de 3 X 31 (desde la primera etapa hasta la última) sumando 2 retardos más en el último sumador, dando un total de 95 veces el retardo de una puerta lógica. La ecuación general que expresa el retardo para el peor de los casos, para un sumador de n bits, es:</p>
+<img src="ecuasion de otros.png" width="500"  geight="400" alt="ecuacion"/>
+<br>
+<p>Un arreglo alternativo que puede ser aproximadamente el doble de rápido, es un diseño implementado con polaridades de acarreo alternadas y un arreglo optimizado de puertas lógicas AND-OR-Inversor.</p>
+<br>
+<h3>Sumadores con acarreo almacenado</h3>
+<br>
+<p>Si un circuito de adición se usa para calcular la suma de tres o más números, puede ser ventajoso no propagar el resultado de acarreo. En su lugar, se utilizan sumadores de tres entradas, generando dos resultados: una suma y un acarreo. La suma y el acarreo pueden ser introducidos en dos entradas del sumador posterior de 3 números sin tener que esperar la propagación de una señal de acarreo. Después de todas las etapas de adición, sin embargo, se debe usar un sumador convencional (tal como el de propagación de acarreo o de acarreo anticipado) para combinar los resultados finales de suma y acarreo.</p>
+<h3>Videos</h3>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8g3pkD8AGwY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qtjohnz4C8c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+       <br>
+       <hr>
+       <div class="row">
+          <div class="text-center col-lg-6 offset-lg-3">
+             <h4><em>I&J</em></h4>
+             <p>Jessica Perez &copy; 2018 &middot;UV todos los derechos reservados; <a href="#" >Mi pagina web</a></p>
+          </div>
+       </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="jquery-3.2.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="popper.min.js"></script>
+    <script src="bootstrap-4.0.0.js"></script>
+  </body>
+</html>
